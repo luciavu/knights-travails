@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Knight's Travails</title>
+  </head>
+  <body>
+    <header>
+      <div class="github-credit">
+        <a href="https://github.com/luciavu/knights-travails" target="_blank"
+          ><i class="icon-github-circled"></i
+        ></a>
+      </div>
+    </header>
+    <div class="info">
+      <div class="heading">Knight's Travails</div>
+      <div class="description">
+        Find the shortest path for a knight to move between two squares on a chessboard.
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="chessboard-container">
+          <div id="chessboard"></div>
+        </div>
+        <div id="controls">
+          <div class="input-container">
+            <div class="input knight-pos">
+              <label for="knight-pos">Knight</label>
+              <input
+                type="text"
+                name="knight-pos"
+                id="knight-pos"
+                placeholder="b1"
+                maxlength="2"
+                minlength="2"
+                required
+                pattern="^[a-hA-H][1-8]$"
+              />
+            </div>
+            <div class="input goal-pos">
+              <label for="goal">Goal</label>
+              <input
+                type="text"
+                name="goal"
+                id="goal"
+                placeholder="d4"
+                maxlength="2"
+                minlength="2"
+                required
+                pattern="^[a-hA-H][1-8]$"
+              />
+            </div>
+          </div>
+          <div class="output-container">
+            <div class="answer">
+              <div class="flex-container">
+                <div class="moves">Moves:</div>
+                <div class="moves-ans ans"></div>
+              </div>
+              <div class="flex-container">
+                <div class="path">Path:</div>
+                <div class="path-ans ans"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

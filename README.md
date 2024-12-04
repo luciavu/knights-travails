@@ -2,7 +2,7 @@
 
 The Odin Project - JavaScript Course Project 9:
 
-A visual solution to TOP's Knight's Travails problem using HTML, CSS and JS.
+A visual solution to TOP's Knight's Travails problem using BFS.
 
 ## Task
 
